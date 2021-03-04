@@ -16,8 +16,9 @@ half adders.
   2. using the “timed” gates to be provided
   * You can simplify your design by reusing the logic with ‘define (presented in discussion section).
 * Your timing diagram must include representative examples. This is relatively easy in this lab, but becomes more important later in the semester.
-a. Force an overall carry out
-b. Random large A&B input (w/ and w/o carry)
-c. Random small A&B input (w/ and w/o carry)
-d. Random combinations
-* Since 64 bits is far too many to analyze wire by wire, your test bench must include verification logic. We’ll go over this in the discussion section, but (briefly) this entails creating behavioral level HDL code and comparing its output with your logic. You will also need to test the verification logic explicitly.
+1. Force an overall carry out
+2. Random large A&B input (w/ and w/o carry)
+3. Random small A&B input (w/ and w/o carry)
+4. Random combinations
+* Since 64 bits is far too many to analyze wire by wire, your test bench must include verification logic. We’ll go over this in the discussion section, but
+(briefly) this entails creating behavioral level HDL code and comparing its output with your logic. You will also need to test the verification logic explicitly.
