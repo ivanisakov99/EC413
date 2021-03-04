@@ -5,5 +5,4 @@ language programming. The end points will be your ability to create a working co
 to be able to evaluate design options. Topics include computer instruction sets, assembly language programming, logic design of arithmetic operations, design 
 of sequential logic with registers and buses, CPU design (data path, control, integrating datapath and control, pipelining), performance evaluation, and 
 memory systems (including caching and virtual memory). In parallel there is a lab where the focus is on in-depth understanding of selected comp org topics 
-including HDL design using Verilog and system design methods. The <ins>prerequisites</ins> are EC311, including familiarity with Verilog, and high-level language 
-programming, preferably in EC327.
+including HDL design using Verilog and system design methods.
