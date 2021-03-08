@@ -2,8 +2,7 @@
 #include <stdbool.h>
 // SOLUTION FILE
 
-main()
-{
+main(){
   int var_int;                    // 2
 
   unsigned char uchar1, uchar2;   // 3
