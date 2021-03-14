@@ -31,9 +31,12 @@ module Top_module_tb;
 	reg [2:0] ALOP;
 
 	// Outputs
-	wire [W-1:0] R0;
-	wire [W-1:0] R0_verify;
+	wire [W:0] R0;
+	wire [W:0] R0_verify;
 	wire error_flag;
+	
+	wire zero_flag;
+	wire overflow_flag;
 
 	// Instantiate the Unit Under Test (UUT)
 	Top_Module uut (
@@ -49,6 +52,10 @@ module Top_module_tb;
 	
 	// Assign Error_flag
 	assign error_flag = ( R0 != R0_verify);
+	
+	assign zero_flag = (R0 == 0);
+	
+	assign overflow_flag = (R0[W-1] == 1 && a[W-1] == 0 && b[W-1] == 0) || (R0[W-1] == 0 && a[W-1] == 1 && b[W-1] == 1);
 	
 	// Verification logic
 	always@(posedge clk)
@@ -114,15 +121,18 @@ always #5 clk = ~clk;
 
 		
 		#100;
-        a = 45657878;
-		b = 5123215;
+//        a = 45657878;
+//		b = 5123215;
+        a = 2;
+        b = 1;
 		c_in = 1;
 		ALOP = 3'b101;
 		
 		
 		#100;
         a = 32'hffffffff;
-		b = 1;
+        b = 32'hffffffff;
+		//b = 1;
 		c_in = 0;
 		ALOP = 3'b110;
 	end

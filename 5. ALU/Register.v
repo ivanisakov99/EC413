@@ -20,11 +20,11 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Register(output [W-1:0] reg_out, input clk,input [W-1:0] reg_in);
+module Register(output [W:0] reg_out, input clk,input [W:0] reg_in);
 
 	parameter W = 32;
 
-	reg [W-1:0] Reg;
+	reg [W:0] Reg;
 
 	assign reg_out = Reg; // puts value into register
 

@@ -27,14 +27,17 @@ input clk;
 input [W-1:0] a, b; 
 input [2:0]ALOP;
 input c_in;
-output [W-1:0] R0;
-output [W-1:0] R0_verify;
-wire [W-1:0] result;
-wire [W-1:0] result2;
+output [W:0] R0;
+output [W:0] R0_verify;
+wire [W:0] result;
+wire [W:0] result2;
+wire c_out;
 
 
-nbit_ALU ALU(result,a,b,c_in,ALOP);// calls the nbit alu
+
+nbit_ALU ALU(result, a,b,c_in,ALOP);// calls the nbit alu
 topnbit_verification verify(result2, clk, c_in,a, b, ALOP); // verification for the nbit output
+
 Register register(R0, clk, result);// stores output of alu in register
 Register register_Verify(R0_verify, clk, result2); // stores value of verification in register
 

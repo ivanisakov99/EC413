@@ -27,9 +27,9 @@ module topnbit_verification(result, clk, c_in,a, b, ALOP);
 	input clk;
 	input [W-1:0] a, b;
 	input c_in;
-	output [W-1:0] result;
+	output [W:0] result;
+
 	
-	wire c_out_to_reg;
 	wire [W-1:0] sum_to_reg;
 	
 	assign { result} = //verifies each function 

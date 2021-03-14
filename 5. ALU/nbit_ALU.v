@@ -20,14 +20,14 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module nbit_ALU(result,a,b,c_in,ALOP);
+module nbit_ALU(result, a,b,c_in,ALOP);
 
 parameter W = 32;
 
 input [W-1:0] a, b; // set the parameter to W-1
 input [2:0]ALOP;
 input c_in;
-output [W-1:0] result;
+output [W:0] result;
 
 
 wire [W:0] carry;
@@ -45,4 +45,5 @@ generate
 
 endgenerate
 
+assign {result[W]} = (ALOP == 3'b101) ? {~carry[W]} : {carry[W]};
 endmodule
