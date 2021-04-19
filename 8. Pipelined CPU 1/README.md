@@ -1,4 +1,4 @@
-### <ins>Lab8: Pipeline CPU</ins>
+### <ins>Lab8: Pipeline CPU 1</ins>
 
 The purpose of Lab 8 is to learn in-depth how a pipelined CPU works. For this lab, you are given a pipelined CPU with no data forwarding or a hazard detection unit. Your job is to design a hazard detection unit for a pipelined CPU with no forwarding support. The pipeline should therefore be stalled for load-use, one-ahead and two-ahead hazards. A detailed diagram of the CPU used in this lab is also included on the next page. Note that the forwarding unit is missing, and will be introduced in lab 9.
 
