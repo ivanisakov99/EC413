@@ -2,7 +2,7 @@
 
 The purpose of Lab 6 is to gain additional experience with digital design and with how computers work by The purpose of Lab 6 is to gain additional experience with digital design and with how computers work by building, debugging, and testing a **4-stage** 32-bit pipelined datapath shown in the figure below.
 
-//
+![Screenshot 2021-04-19 at 13 49 04](https://user-images.githubusercontent.com/60196280/115280576-18a8cc00-a116-11eb-9761-eee9466ad02a.png)
 
 **Registers and Buses**
 
