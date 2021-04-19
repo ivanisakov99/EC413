@@ -22,4 +22,4 @@ Below is a small MIPS program. Start by implementing a testbench for this progra
 4. Read register write signals to avoid overwriting branch instructions.
 5. Add arbitration logic for deciding between 1 & 2 ahead forwarding.
 
-//
+![Screenshot 2021-04-19 at 14 22 39](https://user-images.githubusercontent.com/60196280/115285121-7f7cb400-a11b-11eb-9a6b-83582e23fba5.png)
