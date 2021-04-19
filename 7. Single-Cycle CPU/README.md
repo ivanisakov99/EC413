@@ -2,7 +2,7 @@
 
 The purpose of Lab 7 is to learn in-depth how a CPU works. Given the basic single-cycle MIPS CPU, you will add, debug, and test several new features.
 
-//
+![Screenshot 2021-04-19 at 14 19 42](https://user-images.githubusercontent.com/60196280/115284177-5a3b7600-a11a-11eb-938b-331c874e9ae3.png)
 
 1. Synthesize the project and generate outputs for the given instruction sequence.
 
