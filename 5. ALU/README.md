@@ -19,7 +19,6 @@ In this lab you will design, implement, and test a 32-bit ALU and output registe
 
 ![Screenshot 2021-04-19 at 13 03 51](https://user-images.githubusercontent.com/60196280/115276119-a7b2e580-a110-11eb-9fd7-fc98db9ed25a.png)
 
-
 Behavioral requirements:
 
 The ALU generates a final carry out, overflow and zero output 
