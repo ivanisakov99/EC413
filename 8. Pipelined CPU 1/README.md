@@ -24,5 +24,4 @@ Below is a small MIPS program. Start by implementing a testbench for this progra
 
 3. Add arbitration logic for detecting 1-ahead and 2-ahead hazards to your hazard detection logic.
 
-//
-
+![Screenshot 2021-04-19 at 14 22 39](https://user-images.githubusercontent.com/60196280/115284548-d2a23700-a11a-11eb-9211-f1cb2dae5f97.png)
